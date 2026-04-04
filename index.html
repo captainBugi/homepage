@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="안녕하세요, 풀스택 개발자 권오의 포트폴리오입니다. 웹 개발, AI, 그리고 사용자 경험에 열정을 가진 개발자입니다.">
+  <title>권오 · 풀스택 개발자</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ========== Navigation ========== -->
+  <nav class="nav" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-dot"></span> Owen
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">소개</a>
+        <a href="#skills">기술</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#experience">경력</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-cta">연락하기</a>
+      </div>
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== Hero Section ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <img src="profile.svg" alt="프로필 사진" class="hero-avatar fade-up">
+      
+      <div class="hero-badge fade-up stagger-1">
+        <span class="pulse"></span>
+        구직 가능 · Open to work
+      </div>
+      
+      <h1 class="hero-title fade-up stagger-2">
+        안녕하세요,<br>
+        <span class="highlight">풀스택 개발자</span><br>
+        권오입니다.
+      </h1>
+      
+      <p class="hero-subtitle fade-up stagger-3">
+        사용자 중심의 웹 서비스를 만드는 것을 좋아합니다.<br>
+        깔끔한 코드와 직관적인 UI/UX를 추구합니다.
+      </p>
+      
+      <div class="hero-actions fade-up stagger-4">
+        <a href="#projects" class="btn btn-primary">
+          프로젝트 보기 ↓
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          이력서 다운로드
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== About Section ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <span class="section-label fade-up">About</span>
+      <h2 class="section-title fade-up stagger-1">저를 소개합니다</h2>
+      <p class="section-desc fade-up stagger-2" style="margin-bottom: var(--space-2xl);">
+        3년 이상의 웹 개발 경험을 바탕으로, 프론트엔드부터 백엔드까지 다양한 영역에서 
+        프로덕트를 설계하고 구현해왔습니다. 빠르게 변화하는 기술 트렌드를 습득하고 
+        실무에 적용하는 것에 열정을 가지고 있습니다.
+      </p>
+
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <div class="card fade-up stagger-1">
+          <div class="card-icon">🎨</div>
+          <h3 class="card-title">프론트엔드</h3>
+          <p class="card-desc">React, Next.js, TypeScript를 활용한 모던 웹 앱 개발</p>
+          <ul class="checklist">
+            <li class="checklist-item"><span class="check">✓</span> React / Next.js</li>
+            <li class="checklist-item"><span class="check">✓</span> TypeScript</li>
+            <li class="checklist-item"><span class="check">✓</span> Responsive Design</li>
+            <li class="checklist-item"><span class="check">✓</span> 성능 최적화</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card-featured fade-up stagger-2">
+          <span class="card-badge">추천</span>
+          <div class="card-icon">⚡</div>
+          <h3 class="card-title">백엔드</h3>
+          <p class="card-desc">확장 가능한 서버 아키텍처와 API 설계에 강점</p>
+          <ul class="checklist">
+            <li class="checklist-item"><span class="check">✓</span> Node.js / Express</li>
+            <li class="checklist-item"><span class="check">✓</span> Python / FastAPI</li>
+            <li class="checklist-item"><span class="check">✓</span> REST & GraphQL</li>
+            <li class="checklist-item"><span class="check">✓</span> Database 설계</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card fade-up stagger-3">
+          <div class="card-icon">🤖</div>
+          <h3 class="card-title">AI & 자동화</h3>
+          <p class="card-desc">AI 기술을 활용한 업무 자동화 및 스마트 솔루션</p>
+          <ul class="checklist">
+            <li class="checklist-item"><span class="check">✓</span> RAG / LLM 활용</li>
+            <li class="checklist-item"><span class="check">✓</span> MCP 서버 구축</li>
+            <li class="checklist-item"><span class="check">✓</span> Prompt Engineering</li>
+            <li class="checklist-item"><span class="check">✓</span> 워크플로우 자동화</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Skills Section ========== -->
+  <section class="section" id="skills" style="background: var(--bg-card);">
+    <div class="container">
+      <span class="section-label fade-up">Tech Stack</span>
+      <h2 class="section-title fade-up stagger-1">기술 스택</h2>
+      <p class="section-desc fade-up stagger-2" style="margin-bottom: var(--space-2xl);">
+        지속적으로 학습하며, 프로젝트에 가장 적합한 기술을 선택합니다.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-item fade-up stagger-1">
+          <span class="skill-icon">⚛️</span>
+          <span class="skill-name">React</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+        <div class="skill-item fade-up stagger-2">
+          <span class="skill-icon">▲</span>
+          <span class="skill-name">Next.js</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+        <div class="skill-item fade-up stagger-3">
+          <span class="skill-icon">🟦</span>
+          <span class="skill-name">TypeScript</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+        <div class="skill-item fade-up stagger-4">
+          <span class="skill-icon">🟢</span>
+          <span class="skill-name">Node.js</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+        <div class="skill-item fade-up stagger-5">
+          <span class="skill-icon">🐍</span>
+          <span class="skill-name">Python</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-item fade-up stagger-6">
+          <span class="skill-icon">🗄️</span>
+          <span class="skill-name">PostgreSQL</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-item fade-up stagger-1">
+          <span class="skill-icon">🐳</span>
+          <span class="skill-name">Docker</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-item fade-up stagger-2">
+          <span class="skill-icon">☁️</span>
+          <span class="skill-name">AWS</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+        <div class="skill-item fade-up stagger-3">
+          <span class="skill-icon">🎨</span>
+          <span class="skill-name">Figma</span>
+          <span class="skill-level">Basic</span>
+        </div>
+        <div class="skill-item fade-up stagger-4">
+          <span class="skill-icon">🔀</span>
+          <span class="skill-name">Git</span>
+          <span class="skill-level">Advanced</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Projects Section ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <span class="section-label fade-up">Projects</span>
+      <h2 class="section-title fade-up stagger-1">주요 프로젝트</h2>
+      <p class="section-desc fade-up stagger-2" style="margin-bottom: var(--space-2xl);">
+        실제 사용자를 위한 서비스를 만들며 성장하고 있습니다.
+      </p>
+
+      <div class="cards-grid">
+        <!-- Project 1 -->
+        <div class="card fade-up stagger-1">
+          <div class="card-icon">🛒</div>
+          <h3 class="card-title">E-Commerce Platform</h3>
+          <p class="card-desc">
+            React + Node.js 기반의 커머스 플랫폼. Zustand 상태 관리, 
+            Stripe 결제 연동, 실시간 재고 관리 시스템 구현.
+          </p>
+          <ul class="checklist">
+            <li class="checklist-item"><span class="check">✓</span> React / Zustand</li>
+            <li class="checklist-item"><span class="check">✓</span> Node.js / Express</li>
+            <li class="checklist-item"><span class="check">✓</span> Stripe 결제 연동</li>
+          </ul>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="card card-featured fade-up stagger-2">
+          <span class="card-badge">최근</span>
+          <div class="card-icon">🤖</div>
+          <h3 class="card-title">RAG Chatbot System</h3>
+          <p class="card-desc">
+            FastAPI + ChromaDB 기반의 RAG 챗봇. 로컬 LLM과 연동하여 
+            문서 기반 질의응답 시스템을 구축.
+          </p>
+          <ul class="checklist">
+            <li class="checklist-item"><span class="check">✓</span> FastAPI / Python</li>
+            <li class="checklist-item"><span class="check">✓</span> ChromaDB / Vector DB</li>
+            <li class="checklist-item"><span class="check">✓</span> Ollama / Local LLM</li>
+          </ul>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="card fade-up stagger-3">
+          <div class="card-icon">📋</div>
+          <h3 class="card-title">Task Management App</h3>
+          <p class="card-desc">
+            Next.js 기반의 프로젝트 관리 앱. 드래그 앤 드롭, 
+            실시간 협업, 알림 시스템을 포함한 팀 협업 도구.
+          </p>
+          <ul class="checklist">
+            <li class="checklist-item"><span class="check">✓</span> Next.js / TypeScript</li>
+            <li class="checklist-item"><span class="check">✓</span> Prisma / PostgreSQL</li>
+            <li class="checklist-item"><span class="check">✓</span> WebSocket 실시간 협업</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Experience Section ========== -->
+  <section class="section" id="experience" style="background: var(--bg-card);">
+    <div class="container">
+      <span class="section-label fade-up">Experience</span>
+      <h2 class="section-title fade-up stagger-1">경력 사항</h2>
+      <p class="section-desc fade-up stagger-2" style="margin-bottom: var(--space-2xl);">
+        다양한 환경에서 실무 경험을 쌓아왔습니다.
+      </p>
+
+      <div class="timeline fade-up stagger-3">
+        <div class="timeline-item">
+          <span class="timeline-date">2023.03 — 현재</span>
+          <h3 class="timeline-title">시니어 프론트엔드 개발자</h3>
+          <p class="timeline-company">테크스타트업 주식회사</p>
+          <p class="timeline-desc">
+            React 기반 SaaS 제품의 프론트엔드 아키텍처를 설계하고, 
+            성능 최적화를 통해 Core Web Vitals LCP를 40% 개선했습니다.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2021.06 — 2023.02</span>
+          <h3 class="timeline-title">풀스택 개발자</h3>
+          <p class="timeline-company">디지털 솔루션즈</p>
+          <p class="timeline-desc">
+            Node.js/Express 백엔드와 React 프론트엔드를 포함한 
+            B2B SaaS 플랫폼을 개발하고, 일 10만 요청을 처리하는 
+            API를 설계·운영했습니다.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2020.01 — 2021.05</span>
+          <h3 class="timeline-title">주니어 웹 개발자</h3>
+          <p class="timeline-company">웹에이전시 크리에이트</p>
+          <p class="timeline-desc">
+            다양한 클라이언트를 위한 반응형 웹사이트와 랜딩 페이지를 
+            제작하며 HTML, CSS, JavaScript 핵심 역량을 키웠습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ Section ========== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <span class="section-label fade-up">FAQ</span>
+      <h2 class="section-title fade-up stagger-1">자주 묻는 질문</h2>
+      <p class="section-desc fade-up stagger-2" style="margin-bottom: var(--space-2xl);">
+        궁금한 점이 있으신가요? 여기서 답을 찾아보세요.
+      </p>
+
+      <div class="faq-list fade-up stagger-3">
+        <div class="faq-item" id="faq-1">
+          <button class="faq-question" onclick="toggleFaq('faq-1')">
+            작업 가능한 시간대는 어떻게 되나요?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>한국 시간(KST) 기준으로 평일 09:00~18:00에 주로 작업하며, 
+            프로젝트 일정에 따라 유연하게 조정할 수 있습니다. 해외 팀과의 
+            협업 경험도 풍부합니다.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-2">
+          <button class="faq-question" onclick="toggleFaq('faq-2')">
+            프리랜서 프로젝트도 가능한가요?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>네, 프리랜서 프로젝트도 진행 가능합니다. 프로젝트의 범위와 
+            기간에 따라 견적을 산정해 드립니다. 연락 부탁드립니다.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-3">
+          <button class="faq-question" onclick="toggleFaq('faq-3')">
+            어떤 협업 도구를 사용하나요?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Git/GitHub를 기본으로, Slack, Notion, Jira, Figma 등 
+            다양한 협업 도구를 상황에 맞게 활용합니다. 팀의 기존 워크플로우에 
+            빠르게 적응할 수 있습니다.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" id="faq-4">
+          <button class="faq-question" onclick="toggleFaq('faq-4')">
+            포트폴리오를 더 볼 수 있나요?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>GitHub에서 개인 프로젝트와 오픈소스 기여를 확인하실 수 있으며, 
+            비공개 프로젝트의 경우 별도로 요청하시면 일부 내용을 공유해 드립니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Contact Section ========== -->
+  <section class="section" id="contact">
+    <div class="contact-section fade-up">
+      <h2 class="section-title" style="position: relative; z-index: 1;">
+        함께 일해요 ✨
+      </h2>
+      <p class="section-desc" style="position: relative; z-index: 1;">
+        새로운 프로젝트나 협업 기회에 대해 이야기 나누고 싶습니다.<br>
+        편하게 연락주세요!
+      </p>
+      <div class="contact-links">
+        <a href="mailto:hello@owen.dev" class="contact-link">
+          ✉️ 이메일 보내기
+        </a>
+        <a href="https://github.com" target="_blank" class="contact-link">
+          🐙 GitHub
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="contact-link">
+          💼 LinkedIn
+        </a>
+        <a href="#" class="contact-link">
+          📄 이력서 다운로드
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <span class="logo-dot"></span> Owen
+          </div>
+          <p>사용자에게 가치를 전달하는 웹 서비스를 만듭니다. 
+          깔끔한 코드와 직관적인 경험을 추구합니다.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>네비게이션</h4>
+          <a href="#about">소개</a>
+          <a href="#skills">기술 스택</a>
+          <a href="#projects">프로젝트</a>
+          <a href="#experience">경력</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>링크</h4>
+          <a href="https://github.com" target="_blank">GitHub ↗</a>
+          <a href="https://linkedin.com" target="_blank">LinkedIn ↗</a>
+          <a href="#">블로그 ↗</a>
+          <a href="#">이력서</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>연락처</h4>
+          <a href="mailto:hello@owen.dev">hello@owen.dev</a>
+          <a href="#">서울, 대한민국</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Owen. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="https://github.com" target="_blank" aria-label="GitHub">🐙</a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">💼</a>
+          <a href="mailto:hello@owen.dev" aria-label="Email">✉️</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== Scripts ========== -->
+  <script>
+    // === Scroll-based navigation border ===
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 10);
+    });
+
+    // === Mobile menu toggle ===
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navLinks = document.getElementById('navLinks');
+    let mobileMenuOpen = false;
+
+    mobileToggle.addEventListener('click', () => {
+      mobileMenuOpen = !mobileMenuOpen;
+      if (mobileMenuOpen) {
+        navLinks.style.display = 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '100%';
+        navLinks.style.left = '0';
+        navLinks.style.right = '0';
+        navLinks.style.background = 'rgba(250, 250, 250, 0.98)';
+        navLinks.style.backdropFilter = 'blur(20px)';
+        navLinks.style.padding = '1rem';
+        navLinks.style.borderBottom = '1px solid var(--border)';
+        navLinks.style.gap = '0.25rem';
+      } else {
+        navLinks.style = '';
+      }
+    });
+
+    // === FAQ Accordion ===
+    function toggleFaq(id) {
+      const item = document.getElementById(id);
+      const isActive = item.classList.contains('active');
+      
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(el => {
+        el.classList.remove('active');
+      });
+      
+      // Toggle current
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    }
+
+    // === Scroll Reveal Animation ===
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px',
+      }
+    );
+
+    document.querySelectorAll('.fade-up').forEach((el) => {
+      observer.observe(el);
+    });
+
+    // === Smooth scroll for nav links ===
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Close mobile menu if open
+          if (mobileMenuOpen) {
+            mobileMenuOpen = false;
+            navLinks.style = '';
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
