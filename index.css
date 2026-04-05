@@ -798,6 +798,162 @@ ul, ol {
   color: var(--text-primary);
 }
 
+
+/* — Hero Floating Elements — */
+.hero-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(60px);
+}
+
+.hero-orb-1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.18) 0%, transparent 70%);
+  top: 10%;
+  left: 5%;
+  animation: orbFloat1 12s ease-in-out infinite;
+}
+
+.hero-orb-2 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.14) 0%, transparent 70%);
+  bottom: 15%;
+  right: 8%;
+  animation: orbFloat2 9s ease-in-out infinite;
+}
+
+.hero-orb-3 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 70%);
+  top: 60%;
+  left: 15%;
+  animation: orbFloat3 14s ease-in-out infinite;
+}
+
+@keyframes orbFloat1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(40px, -30px) scale(1.08); }
+  66%       { transform: translate(-20px, 20px) scale(0.94); }
+}
+@keyframes orbFloat2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  40%       { transform: translate(-30px, 25px) scale(1.06); }
+  75%       { transform: translate(20px, -15px) scale(0.96); }
+}
+@keyframes orbFloat3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(25px, -40px) scale(1.1); }
+}
+
+/* Floating cards wrapper */
+.hero-float-card {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-float-card-left {
+  left: clamp(10px, 5vw, 60px);
+  top: 50%;
+  transform: translateY(-60%);
+  animation: floatCardLeft 7s ease-in-out infinite;
+}
+
+.hero-float-card-right {
+  right: clamp(10px, 5vw, 60px);
+  top: 50%;
+  transform: translateY(-40%);
+  animation: floatCardRight 8s ease-in-out infinite;
+}
+
+@keyframes floatCardLeft {
+  0%, 100% { transform: translateY(-60%) rotate(-2deg); }
+  50%       { transform: translateY(-68%) rotate(1deg); }
+}
+@keyframes floatCardRight {
+  0%, 100% { transform: translateY(-40%) rotate(2deg); }
+  50%       { transform: translateY(-32%) rotate(-1deg); }
+}
+
+.float-card-inner {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 229, 229, 0.8);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md) var(--space-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  min-width: 220px;
+}
+
+/* dot row */
+.float-card-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: var(--space-sm);
+}
+.float-card-dot.is-red    { background: #ff5f57; }
+.float-card-dot.is-yellow { background: #febc2e; }
+.float-card-dot.is-green  { background: #28c840; }
+
+/* code snippet */
+.float-card-code {
+  font-family: 'Menlo', 'Consolas', 'Monaco', monospace;
+  font-size: 0.72rem;
+  line-height: 1.8;
+  color: #374151;
+  white-space: pre;
+}
+.float-card-code .c-kw   { color: #7c3aed; font-weight: 600; }
+.float-card-code .c-fn   { color: #2563eb; }
+.float-card-code .c-key  { color: #0f766e; }
+.float-card-code .c-str  { color: #16a34a; }
+.float-card-code .c-bool { color: #d97706; font-weight: 600; }
+
+/* stats card */
+.float-card-stats {
+  min-width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.stat-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.stat-value {
+  font-size: var(--font-size-xl);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text-primary);
+}
+
+.stat-label {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.stat-divider {
+  height: 1px;
+  background: var(--border);
+}
+
 /* — Animations — */
 .fade-up {
   opacity: 0;
@@ -818,7 +974,17 @@ ul, ol {
 .stagger-6 { transition-delay: 0.6s; }
 
 /* — Responsive — */
+@media (max-width: 1080px) {
+  .hero-float-card {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero-orb {
+    display: none;
+  }
+
   .nav-links {
     display: none;
   }
